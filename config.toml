@@ -1,0 +1,94 @@
+baseURL = "https://example.com"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Tech Blog"
+theme = "cupper-hugo-theme"
+
+[taxonomies]
+tag = "tags"
+
+[permalinks]
+post = "/:filename/"
+
+[imaging]
+quality = 99
+
+[params]
+description = "JavaScript, Construct, etc."
+homeMetaContent = "JavaScript, Construct, etc."
+footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
+dateFormat = "2006.01.02"
+katex = true
+hideHeaderLinks = false
+search = true
+showThemeSwitcher = true
+defaultDarkTheme = false
+moveFooterToHeader = false
+logoAlt = "An alternative text description of the logo"
+customCss = [ "css/custom_01.css", "css/custom_02.css" ]
+customJs = [ "js/custom_01.js", "js/custom_02.js" ]
+navTitleText = "Tech Blog"
+
+[menu]
+  [[menu.nav]]
+    identifier = "home"
+    name = "Home"
+    title = "home"
+    url = "/"
+    weight = 10
+
+  [[menu.nav]]
+    identifier = "posts"
+    name = "Posts"
+    title = "posts"
+    url = "/posts/"
+    weight = 20
+
+  [[menu.nav]]
+    identifier = "tags"
+    name = "Tags"
+    title = "tags"
+    url = "/tags/"
+    weight = 30
+
+  [[menu.nav]]
+    identifier = "RSS"
+    name = "RSS"
+    title = "RSS"
+    url = "/index.xml"
+    weight = 40
+
+[markup]
+defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark.extensions]
+definitionList = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+taskList = true
+typographer = true
+
+[markup.goldmark.parser]
+attribute = true
+autoHeadingID = true
+
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = true
+xHTML = false
+
+  [markup.highlight]
+  codeFences = false
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = true
+  noClasses = true
+  style = "monokai"
+  tabWidth = 4
+
+  [markup.tableOfContents]
+  endLevel = 6
+  startLevel = 2
