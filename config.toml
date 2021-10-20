@@ -1,94 +1,71 @@
-baseURL = "https://example.com"
-languageCode = "en-us"
+baseURL = "http://example.org/"
 defaultContentLanguage = "en"
+languageCode = "en-us"
 title = "Tech Blog"
-theme = "cupper-hugo-theme"
-
-[taxonomies]
-tag = "tags"
-
-[permalinks]
-post = "/:filename/"
-
-[imaging]
-quality = 99
+theme = "LoveIt"
 
 [params]
-description = "JavaScript, Construct, etc."
-homeMetaContent = "JavaScript, Construct, etc."
-footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
-dateFormat = "2006.01.02"
-katex = true
-hideHeaderLinks = false
-search = true
-showThemeSwitcher = true
-defaultDarkTheme = false
-moveFooterToHeader = false
-logoAlt = "An alternative text description of the logo"
-customCss = [ "css/custom_01.css", "css/custom_02.css" ]
-customJs = [ "js/custom_01.js", "js/custom_02.js" ]
-navTitleText = "Tech Blog"
+  # LoveIt theme version
+  version = "0.2.X"
+  dateFormat = "2006.01.02"
+
+[params.section]
+  dateFormat = "Jan 02"
+
+[params.page.code]
+  # the maximum number of lines of displayed code by default
+  maxShownLines = 50
 
 [menu]
-  [[menu.nav]]
-    identifier = "home"
-    name = "Home"
-    title = "home"
-    url = "/"
-    weight = 10
-
-  [[menu.nav]]
+  [[menu.main]]
     identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
     name = "Posts"
-    title = "posts"
     url = "/posts/"
-    weight = 20
-
-  [[menu.nav]]
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
     identifier = "tags"
+    pre = ""
+    post = ""
     name = "Tags"
-    title = "tags"
     url = "/tags/"
-    weight = 30
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
 
-  [[menu.nav]]
-    identifier = "RSS"
-    name = "RSS"
-    title = "RSS"
-    url = "/index.xml"
-    weight = 40
-
+# Markup related configuration in Hugo
 [markup]
-defaultMarkdownHandler = "goldmark"
-
-[markup.goldmark.extensions]
-definitionList = true
-footnote = true
-linkify = true
-strikethrough = true
-table = true
-taskList = true
-typographer = true
-
-[markup.goldmark.parser]
-attribute = true
-autoHeadingID = true
-
-[markup.goldmark.renderer]
-hardWraps = false
-unsafe = true
-xHTML = false
-
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
-  codeFences = false
-  hl_Lines = ""
-  lineNoStart = 1
-  lineNos = false
-  lineNumbersInTable = true
-  noClasses = true
-  style = "monokai"
-  tabWidth = 4
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+    linenos = true
 
-  [markup.tableOfContents]
-  endLevel = 6
-  startLevel = 2
+[params.search]
+  enable = true
+  # type of search engine ("lunr", "algolia")
+  type = "lunr"
+  # max index length of the chunked content
+  contentLength = 4000
+  # placeholder of the search bar
+  placeholder = ""
+  # LoveIt NEW | 0.2.1 max number of results length
+  maxResultLength = 10
+  # LoveIt NEW | 0.2.3 snippet length of the result
+  snippetLength = 30
+  # LoveIt NEW | 0.2.1 HTML tag name of the highlight part in results
+  highlightTag = "em"
+  # LoveIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
+  absoluteURL = false

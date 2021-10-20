@@ -14,8 +14,8 @@ categories: []
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-featuredImage: ""
-featuredImagePreview: ""
+featuredImage: "blog-header@2x.png"
+featuredImagePreview: "blog-header@2x.png"
 
 toc:
   enable: true

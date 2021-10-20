@@ -7,7 +7,13 @@ Update theme: `git submodule update --remote --merge`
 
 
 # New Post
+`hugo new --kind post-bundle posts/my-post`
+
+or maybe
+
 `hugo new posts/my-first-post.md`
+
+if there won't be any images.
 
 Don't use `#` H1's. The post title will be a H1.
 
@@ -21,8 +27,8 @@ Output will be in ./public
 
 # Info
 
-Theme: [Cupper](https://themes.gohugo.io/themes/cupper-hugo-theme/)
+Theme: [LoveIt](https://github.com/dillonzq/LoveIt)
 
-Docs: [Cupper docs](https://github.com/zwbetz-gh/cupper-hugo-theme)
+Docs: [LoveIt docs](https://hugoloveit.com/categories/documentation/)
 
-Place your SVG logo at static/images/logo.svg.
+[Info banners](https://hugoloveit.com/theme-documentation-extended-shortcodes/#4-admonition)
