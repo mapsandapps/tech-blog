@@ -45,10 +45,10 @@ it nice?
 
 
 ```toml
-    [params.page.code]
-      # whether to show the copy button of the code block
-      copy = true
-      # the maximum number of lines of displayed code by default
-      maxShownLines = 10
+[params.page.code]
+  # whether to show the copy button of the code block
+  copy = true
+  # the maximum number of lines of displayed code by default
+  maxShownLines = 10
 ```
 You can also adjust whether or not a copy button shows in the top right of the code block.

@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 defaultContentLanguage = "en"
 languageCode = "en-us"
-title = "Tech Blog"
+title = "Maps and Apps"
 theme = "LoveIt"
 
 [params]
@@ -9,12 +9,103 @@ theme = "LoveIt"
   version = "0.2.X"
   dateFormat = "2006.01.02"
 
+# Author config
+[author]
+  name = "Shawn Taylor"
+
 [params.section]
   dateFormat = "Jan 02"
 
 [params.page.code]
   # the maximum number of lines of displayed code by default
   maxShownLines = 50
+
+# Social config about the author
+[params.social]
+  GitHub = "mapsandapps"
+  Linkedin = "shawntayloratl"
+  Twitter = "mapsandappsatl"
+  Facebook = ""
+  Telegram = ""
+  Medium = ""
+  Gitlab = ""
+  Youtubelegacy = ""
+  Youtubecustom = ""
+  Youtubechannel = ""
+  Tumblr = ""
+  Quora = ""
+  Keybase = ""
+  Pinterest = ""
+  Reddit = ""
+  Codepen = "mapsandapps"
+  FreeCodeCamp = ""
+  Bitbucket = ""
+  Stackoverflow = ""
+  Weibo = ""
+  Odnoklassniki = ""
+  VK = ""
+  Flickr = ""
+  Xing = ""
+  Snapchat = ""
+  Soundcloud = ""
+  Spotify = ""
+  Bandcamp = ""
+  Paypal = ""
+  Fivehundredpx = ""
+  Mix = ""
+  Goodreads = ""
+  Lastfm = ""
+  Foursquare = ""
+  Hackernews = ""
+  Kickstarter = ""
+  Patreon = ""
+  Steam = ""
+  Twitch = ""
+  Strava = ""
+  Skype = ""
+  Whatsapp = ""
+  Zhihu = ""
+  Douban = ""
+  Angellist = ""
+  Slidershare = ""
+  Jsfiddle = ""
+  Deviantart = ""
+  Behance = ""
+  Dribbble = ""
+  Wordpress = ""
+  Vine = ""
+  Googlescholar = ""
+  Researchgate = ""
+  Mastodon = ""
+  Thingiverse = ""
+  Devto = ""
+  Gitea = ""
+  XMPP = ""
+  Matrix = ""
+  Bilibili = ""
+  Email = ""
+  RSS = true # LoveIt NEW | 0.2.0  # Home page config
+
+[params.home]
+  # LoveIt NEW | 0.2.0 amount of RSS pages
+  rss = 10
+  # Home page profile
+  [params.home.profile]
+    enable = true
+    # Gravatar Email for preferred avatar in home page
+    gravatarEmail = ""
+    # URL of avatar shown in home page
+    avatarURL = "icon.svg"
+    # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
+    title = "Maps and Apps"
+    # subtitle shown in home page
+    subtitle = "Tech blog"
+    # whether to use typeit animation for subtitle
+    typeit = false
+    # whether to show social links
+    social = true
+    # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
+    disclaimer = ""
 
 [menu]
   [[menu.main]]
@@ -69,3 +160,13 @@ theme = "LoveIt"
   highlightTag = "em"
   # LoveIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
   absoluteURL = false
+
+
+# LoveIt NEW | 0.2.0 Analytics config
+[params.analytics]
+  enable = false
+  # Google Analytics
+  [params.analytics.google]
+    id = ""
+    # whether to anonymize IP
+    anonymizeIP = true
