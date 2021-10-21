@@ -1,0 +1,25 @@
+<!-- adjusted from https://github.com/zwbetz-gh/cupper-hugo-theme/blob/master/layouts/shortcodes/codePen.html MIT license -->
+{{ $pen := .Get "pen" }} {{- $defaultTab := .Get "defaultTab" | default "js" -}}
+{{ with .Site.Params.codepenUser }}
+<iframe
+  height="300"
+  scrolling="no"
+  title="code demonstration with codepen"
+  src="//codepen.io/{{ . | lower }}/embed/{{ $pen }}/?height=265&theme-id=dark&default-tab={{ $defaultTab }},result&embed-version=2"
+  frameborder="no"
+  allowtransparency="true"
+  allowfullscreen="true"
+  style="width: 100%"
+>
+  <div>
+    <a href="//codepen.io/{{ . | lower }}/pen/{{ $pen }}"
+      >See the demo on codePen</a
+    >
+  </div>
+</iframe>
+{{ else }}
+<p class="site-error">
+  <strong>Site error:</strong> The <code>codepenUser</code> param has not been
+  set in <code>config.toml</code>
+</p>
+{{ end }}
