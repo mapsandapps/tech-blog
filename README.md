@@ -2,6 +2,8 @@
 
 Run with drafts visible: `hugo server -D`
 
+Runs on port 1313
+
 
 Update theme: `git submodule update --remote --merge`
 

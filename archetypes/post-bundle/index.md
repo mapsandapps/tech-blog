@@ -5,8 +5,7 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
 authorLink: ""
-description: ""
-summary: "Shown on home page"
+description: "Shown on home page if nothing before 'more'"
 
 tags: []
 categories: []
