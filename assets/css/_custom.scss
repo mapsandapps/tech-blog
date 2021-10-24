@@ -3,10 +3,35 @@
 .single {
   .content {
     h2 {
-      margin: 5rem 0 3rem;
+      margin: 8rem 0 3rem;
     }
     h3 {
-      margin: 3rem 0 2rem;
+      margin: 4rem 0 2rem;
     }
   }
+}
+
+.single {
+  .single-title {
+    margin-top: 3.5rem;
+  }
+}
+
+.toc-content {
+  li {
+    line-height: 1.3rem;
+  }
+}
+
+.single .content > h3 > .header-mark::before {
+  content: ".";
+}
+
+.toc .toc-content ul a:first-child::before {
+  content: "-";
+}
+
+.home[posts] .summary {
+  padding-top: 7rem;
+  padding-bottom: 6rem;
 }

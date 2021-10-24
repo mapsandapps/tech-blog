@@ -27,9 +27,9 @@ I have a hard time remembering the syntax for sharing data within and between th
 
 <!--more-->
 
-## Store in store
+## Store in Store
 
-### State in getters, mutations (probably more)
+### State in Getters, Mutations (probably more)
 
 ```vue
 getters: {
@@ -47,7 +47,7 @@ mutations: {
 ```
 
 
-### Getters in actions
+### Getters in Actions
 
 ```vue
 actions: {
@@ -63,9 +63,9 @@ actions: {
 
 TODO: more combos for store in store
 
-## Component in component
+## Component in Component
 
-### Data in computed
+### Data in Computed
 ```vue
 data() {
   return {
@@ -79,7 +79,7 @@ computed: {
 }
 ```
 
-### Props in computed
+### Props in Computed
 ```vue
 props: {
   color: {
@@ -99,7 +99,7 @@ computed: {
 TODO: more combos for component in component
 
 
-## Store in component
+## Store in Component
 
 ### State and Getters
 
@@ -138,7 +138,7 @@ computed: {
 }
 ```
 
-### Mutations and actions
+### Mutations and Actions
 
 Mutations and actions come in to `methods` via `mapMutations` and `mapActions`.
 

@@ -1,1 +1,14 @@
 // In assets/css/_override.scss, you can override the variables in themes/LoveIt/assets/css/_variables.scss to customize the style.
+
+$global-font-family: "Helvetica Neue", HelveticaNeue, "Liberation Sans",
+  Helvetica, sans-serif;
+$global-font-size: 18px;
+
+$global-font-color: #222;
+
+// Color of the border
+$global-border-color: #dadada;
+$global-border-color-dark: #545454;
+
+$toc-title-font-size: 1rem;
+$toc-content-font-size: 0.8rem;
