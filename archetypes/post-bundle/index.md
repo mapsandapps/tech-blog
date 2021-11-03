@@ -5,7 +5,7 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
 authorLink: ""
-description: "Shown on home page if nothing before 'more'"
+description: "Shown on home page if nothing before 'more'; also the `title` of the header image"
 
 tags: []
 categories: []
@@ -25,3 +25,5 @@ license: ""
 ---
 
 <!--more-->
+
+hello world

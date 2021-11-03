@@ -8,6 +8,18 @@
     h3 {
       margin: 4rem 0 2rem;
     }
+    h2,
+    h3 {
+      a {
+        text-decoration: none;
+      }
+    }
+    a {
+      text-decoration: underline;
+    }
+    p {
+      margin: 2rem 0;
+    }
   }
 }
 
